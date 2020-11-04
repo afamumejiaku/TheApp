@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Tweets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="word-cloud"></div>
+      <div id="word-cloud"></div>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="files">Upload a CSV formatted file:</label>
+          <input type="file" onchange="main(this.value)" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="Sentiment.js"></script>
+  <script src="reader.js"></script>
+  <script src="D3.js"></script>
+  <script src="d3.layout.cloud.js"></script>
+  <script src="cloud.js"></script>
+</html>
