@@ -82,7 +82,7 @@ function main(input) {
            $(input.container2).append(mydata)
         }
         // Call Data again to generate Table of Items
-        await originalData(input.data).then(data => {
+        await originalData().then(data => {
           try {
           //Try and sort by date if available
           data = data.sort((a, b) => new Date (a.date) - new Date (b.date));
